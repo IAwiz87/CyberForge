@@ -32,8 +32,12 @@ Whether you are tracking known exploited vulnerabilities, preparing for an ATO, 
 
 ## Tools
 
+> 📁 Browse all tools: [`tools/`](tools/)
+
+---
+
 ### 🛡️ CISA KEV Browser
-> `tools/cisa-kev-browser/`
+> [`tools/cisa-kev-browser/`](https://github.com/IAwiz87/CyberForge/tree/main/tools/cisa-kev-browser)
 
 A fully standalone, offline-capable browser for the [CISA Known Exploited Vulnerabilities (KEV) Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog).
 
@@ -56,12 +60,15 @@ A fully standalone, offline-capable browser for the [CISA Known Exploited Vulner
 
 **Quick start:**
 ```bash
-cd tools/cisa-kev-browser
-python3 build.py          # fetches latest CISA KEV data
+# Clone CyberForge with all tools
+git clone --recurse-submodules https://github.com/IAwiz87/CyberForge.git
+cd CyberForge/tools/cisa-kev-browser
+
+python3 build.py            # fetches latest CISA KEV data
 open cisa-kev-browser.html  # open in any browser
 ```
 
-📄 [Full documentation](tools/cisa-kev-browser/README.md) · 🌐 [Project page](https://iawiz87.github.io/cisa-kev-browser) · 📦 [Standalone repo](https://github.com/IAwiz87/cisa-kev-browser)
+📄 [Full documentation](https://github.com/IAwiz87/CyberForge/blob/main/tools/cisa-kev-browser/README.md) · 🌐 [Project page](https://iawiz87.github.io/cisa-kev-browser) · 📦 [Standalone repo](https://github.com/IAwiz87/cisa-kev-browser)
 
 ---
 
