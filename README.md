@@ -75,7 +75,7 @@ Tools planned or in development for this repository:
 | NIST SP 800-53 Control Browser | Compliance / ATO | 🔜 Planned |
 | POAM Tracker | GRC / Risk Management | 🔜 Planned |
 | FedRAMP Control Baseline Diff | FedRAMP / ATO | 🔜 Planned |
-| CMVP / FIPS 140-3 Module Lookup | Cryptographic Compliance | 🔜 Planned |
+| CertForge — FIPS 140-3 Cert. CMVP Readiness Platform | Cryptographic Compliance | 🔜 Planned |
 
 ---
 
