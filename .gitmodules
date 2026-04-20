@@ -1,0 +1,3 @@
+[submodule "tools/cisa-kev-browser"]
+	path = tools/cisa-kev-browser
+	url = https://github.com/IAwiz87/cisa-kev-browser.git
