@@ -1,3 +1,6 @@
 [submodule "tools/cisa-kev-browser"]
 	path = tools/cisa-kev-browser
 	url = https://github.com/IAwiz87/cisa-kev-browser.git
+[submodule "CyberForge-Compendium"]
+	path = CyberForge-Compendium
+	url = https://github.com/IAwiz87/CyberForge-Compendium.git
