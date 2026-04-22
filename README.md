@@ -39,6 +39,45 @@ Whether you are tracking known exploited vulnerabilities, preparing for an ATO, 
 ### 🛡️ CISA KEV Browser
 > [`tools/cisa-kev-browser/`](https://github.com/IAwiz87/CyberForge/tree/main/tools/cisa-kev-browser)
 
+---
+
+### 📋 FedRAMP Baseline → POA&M Pipeline *(Private)*
+> [`tools/fedramp-poam-pipeline/`](https://github.com/IAwiz87/CyberForge/tree/main/tools/fedramp-poam-pipeline)
+
+Combines NIST OSCAL baseline awareness with multi-scanner vulnerability ingestion to produce FedRAMP-compliant POA&M documentation automatically.
+
+| | |
+|---|---|
+| **Baselines** | LI-SaaS · Low · Moderate · High |
+| **Scanners** | Qualys VM · Tenable · Wiz · Generic CSV |
+| **SLA windows** | FedRAMP ConMon: Critical=30d · High=90d · Medium=180d · Low=365d |
+| **Dependencies** | pandas · openpyxl · python-dateutil |
+| **Outputs** | Excel POA&M · HTML Dashboard · Gap Report · Out-of-Scope CSV |
+
+**Key capabilities:**
+- 🗺️ Maps every finding to its NIST 800-53 control automatically
+- 🎯 Classifies findings as in-scope or out-of-scope for your baseline
+- ⏱️ Applies FedRAMP ConMon SLA windows (not generic CVSS dates)
+- 🔴 Flags Critical/High findings as FedRAMP 20x KSI triggers
+- 📋 Gap report surfaces baseline controls with no findings (scanner blind spots)
+- 📊 Standalone HTML dashboard — no server, no install required
+
+**Quick start:**
+```bash
+cd tools/fedramp-poam-pipeline
+pip install -r requirements.txt
+
+# Run against your scan
+python FedRAMP_pipeline.py --scan your_scan.csv --baseline Moderate --html
+
+# Test with included samples
+python FedRAMP_pipeline.py \
+  --scan tests/sample_qualys_scan.csv \
+  --baseline Moderate --html
+```
+
+📄 [Full documentation](https://github.com/IAwiz87/fedramp-poam-pipeline#readme) · 🔒 [Private repo](https://github.com/IAwiz87/fedramp-poam-pipeline)
+
 A fully standalone, offline-capable browser for the [CISA Known Exploited Vulnerabilities (KEV) Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog).
 
 | | |
@@ -79,8 +118,8 @@ Tools planned or in development for this repository:
 | Tool | Focus Area | Status |
 |------|-----------|--------|
 | CISA KEV Browser | Vulnerability Management | ✅ Live |
+| FedRAMP Baseline → POA&M Pipeline | FedRAMP / GRC / ATO | ✅ Live |
 | NIST SP 800-53 Control Browser | Compliance / ATO | 🔜 Planned |
-| POAM Tracker | GRC / Risk Management | 🔜 Planned |
 | FedRAMP Control Baseline Diff | FedRAMP / ATO | 🔜 Planned |
 | CertForge — FIPS 140-3 Cert. CMVP Readiness Platform | Cryptographic Compliance | 🔜 Planned |
 
