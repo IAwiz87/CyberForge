@@ -1,6 +1,12 @@
 [submodule "tools/cisa-kev-browser"]
 	path = tools/cisa-kev-browser
 	url = https://github.com/IAwiz87/cisa-kev-browser.git
+<<<<<<< HEAD
 [submodule "tools/fedramp-poam-pipeline"]
 	path = tools/fedramp-poam-pipeline
 	url = https://github.com/IAwiz87/fedramp-poam-pipeline.git
+=======
+[submodule "CyberForge-Compendium"]
+	path = CyberForge-Compendium
+	url = https://github.com/IAwiz87/CyberForge-Compendium.git
+>>>>>>> bb8222db35a4e1b0ec561d5289f5c2431ae1f984
