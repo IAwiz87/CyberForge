@@ -118,9 +118,8 @@ Tools planned or in development for this repository:
 | Tool | Focus Area | Status |
 |------|-----------|--------|
 | CISA KEV Browser | Vulnerability Management | ✅ Live |
-| FedRAMP Baseline → POA&M Pipeline | FedRAMP / GRC / ATO | ✅ Live |
+| FedRAMP Baseline → POA&M Pipeline | FedRAMP / GRC / ATO | Testing_alpha |
 | NIST SP 800-53 Control Browser | Compliance / ATO | 🔜 Planned |
-| FedRAMP Control Baseline Diff | FedRAMP / ATO | 🔜 Planned |
 | CertForge — FIPS 140-3 Cert. CMVP Readiness Platform | Cryptographic Compliance | 🔜 Planned |
 
 ---
