@@ -72,7 +72,7 @@ open cisa-kev-browser.html  # open in any browser
 
 ---
 
-### 📋 FedRAMP Baseline → POA&M Pipeline *(Private)*
+### 📋 FedRAMP Baseline → POA&M Pipeline *(alpha_Testing)*
 > [`tools/fedramp-poam-pipeline/`](https://github.com/IAwiz87/CyberForge/tree/main/tools/fedramp-poam-pipeline)
 
 Combines NIST OSCAL baseline awareness with multi-scanner vulnerability ingestion to produce FedRAMP-compliant POA&M documentation automatically.
@@ -118,7 +118,7 @@ Tools planned or in development for this repository:
 | Tool | Focus Area | Status |
 |------|-----------|--------|
 | CISA KEV Browser | Vulnerability Management | ✅ Live |
-| FedRAMP Baseline → POA&M Pipeline | FedRAMP / GRC / ATO | Testing_alpha |
+| FedRAMP Baseline → POA&M Pipeline | FedRAMP / GRC / ATO | alpha_Testing |
 | NIST SP 800-53 Control Browser | Compliance / ATO | 🔜 Planned |
 | CertForge — FIPS 140-3 Cert. CMVP Readiness Platform | Cryptographic Compliance | 🔜 Planned |
 
