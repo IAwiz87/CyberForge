@@ -39,6 +39,37 @@ Whether you are tracking known exploited vulnerabilities, preparing for an ATO, 
 ### 🛡️ CISA KEV Browser
 > [`tools/cisa-kev-browser/`](https://github.com/IAwiz87/CyberForge/tree/main/tools/cisa-kev-browser)
 
+A fully standalone, offline-capable browser for the [CISA Known Exploited Vulnerabilities (KEV) Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog).
+
+| | |
+|---|---|
+| **Catalog entries** | 1,558+ KEVs tracked |
+| **Ransomware-confirmed** | 313 vulnerabilities |
+| **Data source** | CISA live JSON feed |
+| **Dependencies** | Zero (Python stdlib only) |
+| **Output** | Single standalone HTML file |
+
+**Key capabilities:**
+- 🔍 Full-text search across CVE ID, vendor, product, description, CWE, and notes
+- 🎛️ Filter by vendor, ransomware campaign use, CWE, and date range
+- 📊 Sortable columns — newest CVEs displayed first by default
+- 📋 Detail modal per CVE — required action, due date, NVD/CISA/vendor reference links
+- ⚠️ Overdue remediation date highlighting
+- 📤 Export any filtered view to CSV
+- 🔄 One command to pull the latest data from CISA
+
+**Quick start:**
+```bash
+# Clone CyberForge with all tools
+git clone --recurse-submodules https://github.com/IAwiz87/CyberForge.git
+cd CyberForge/tools/cisa-kev-browser
+
+python3 build.py            # fetches latest CISA KEV data
+open cisa-kev-browser.html  # open in any browser
+```
+
+📄 [Full documentation](https://github.com/IAwiz87/CyberForge/blob/main/tools/cisa-kev-browser/README.md) · 🌐 [Project page](https://iawiz87.github.io/cisa-kev-browser) · 📦 [Standalone repo](https://github.com/IAwiz87/cisa-kev-browser)
+
 ---
 
 ### 📋 FedRAMP Baseline → POA&M Pipeline *(Private)*
@@ -77,37 +108,6 @@ python FedRAMP_pipeline.py \
 ```
 
 📄 [Full documentation](https://github.com/IAwiz87/fedramp-poam-pipeline#readme) · 🔒 [Private repo](https://github.com/IAwiz87/fedramp-poam-pipeline)
-
-A fully standalone, offline-capable browser for the [CISA Known Exploited Vulnerabilities (KEV) Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog).
-
-| | |
-|---|---|
-| **Catalog entries** | 1,558+ KEVs tracked |
-| **Ransomware-confirmed** | 313 vulnerabilities |
-| **Data source** | CISA live JSON feed |
-| **Dependencies** | Zero (Python stdlib only) |
-| **Output** | Single standalone HTML file |
-
-**Key capabilities:**
-- 🔍 Full-text search across CVE ID, vendor, product, description, CWE, and notes
-- 🎛️ Filter by vendor, ransomware campaign use, CWE, and date range
-- 📊 Sortable columns — newest CVEs displayed first by default
-- 📋 Detail modal per CVE — required action, due date, NVD/CISA/vendor reference links
-- ⚠️ Overdue remediation date highlighting
-- 📤 Export any filtered view to CSV
-- 🔄 One command to pull the latest data from CISA
-
-**Quick start:**
-```bash
-# Clone CyberForge with all tools
-git clone --recurse-submodules https://github.com/IAwiz87/CyberForge.git
-cd CyberForge/tools/cisa-kev-browser
-
-python3 build.py            # fetches latest CISA KEV data
-open cisa-kev-browser.html  # open in any browser
-```
-
-📄 [Full documentation](https://github.com/IAwiz87/CyberForge/blob/main/tools/cisa-kev-browser/README.md) · 🌐 [Project page](https://iawiz87.github.io/cisa-kev-browser) · 📦 [Standalone repo](https://github.com/IAwiz87/cisa-kev-browser)
 
 ---
 
